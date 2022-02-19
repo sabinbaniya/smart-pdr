@@ -74,14 +74,16 @@
         </nav>
 
         <div class="hidden md:block">
-          <button class="px-6 rounded-md primary-btn">Book Now</button>
+          <button class="px-6 rounded-md primary-btn">
+            <a href="#contact">Book Now</a>
+          </button>
         </div>
       </header>
 
       <main>
         <!-- hero section -->
         <section
-          class="mt-8 mb-4 sm:flex justify-between items-center sm:h-[70vh]"
+          class="mt-8 mb-4 sm:flex justify-between items-center sm:h-[80vh]"
         >
           <div
             class="w-10/12 mx-auto sm:pl-12 flex flex-col items-center sm:block basis-3/5"
@@ -99,7 +101,7 @@
               best service in the country for paintless dent repair & much more.
             </h1>
             <button class="primary-btn px-4 rounded-md my-4 w-52">
-              Know More
+              <a href="#companies">Know More</a>
             </button>
           </div>
           <div
@@ -107,14 +109,66 @@
           >
             <img
               src="./images/hero.png"
-              class="ml-36 sm:hidden"
+              class="ml-28 sm:hidden"
               alt="Smart PDR is a
           paintless dent repair experts company."
             />
           </div>
         </section>
 
-        <section class="my-4">
+        <!-- why coose us section  -->
+        <section class="w-11/12 mx-auto my-16" id="companies">
+          <h3 class="h3_style">Why choose us?</h3>
+          <div
+            class="flex flex-col items-center justify-between sm:flex-row mx-auto space-y-8 sm:space-y-0 sm:space-x-4"
+          >
+            <div
+              class="card shadow-lg max-w-xs p-4 rounded-lg flex flex-col items-center space-y-2 text-center hover:bg-cred hover:text-white min-h-[227px]"
+            >
+              <img
+                src="./images/gem-solid.svg"
+                alt="Top Quality"
+                class="h-14"
+              />
+              <h3 class="font-semibold text-xl">Top Quality</h3>
+              <h4 class="text-cgrey">
+                We provide the best in class service for paintless dent repair,
+                standard auto body repair and much more.
+              </h4>
+            </div>
+            <div
+              class="card shadow-lg max-w-xs p-4 rounded-lg flex flex-col items-center space-y-2 text-center hover:bg-cred hover:text-white min-h-[227px]"
+            >
+              <img
+                src="./images/toolbox-solid.svg"
+                alt="Service by Experts"
+                class="h-14"
+              />
+              <h3 class="font-semibold text-xl">Service by Experts</h3>
+              <h4 class="text-cgrey">
+                We have the best working team, that will take care of your care
+                & work on them to give it brand new feel.
+              </h4>
+            </div>
+            <div
+              class="card shadow-lg max-w-xs p-4 rounded-lg flex flex-col items-center space-y-2 text-center hover:bg-cred hover:text-white min-h-[227px]"
+            >
+              <img
+                src="./images/business-time-solid.svg"
+                alt="On-Time Delivery"
+                class="h-14"
+              />
+              <h3 class="font-semibold text-xl">On-Time Delivery</h3>
+              <h4 class="text-cgrey">
+                We believe time is the most valuable resource so, we work with
+                dedication to make your delivery on-time.
+              </h4>
+            </div>
+          </div>
+        </section>
+
+        <!-- companies section -->
+        <section class="my-16">
           <div
             class="w-11/12 h-28 mx-auto shadow-lg rounded-lg flex items-center justify-between p-8"
           >
@@ -165,7 +219,179 @@
             <button class="md:hidden" onclick="plusDivs(+1)">&#10095;</button>
           </div>
         </section>
+
+        <!-- about us section  -->
+        <section class="w-11/12 mx-auto my-4" id="about">
+          <div>
+            <img
+              src="./images/hero-2.png"
+              alt="Smart PDR, Top Paintless Dent Repair Company"
+            />
+          </div>
+          <div class="sm:flex items-center justify-between w-full mt-8">
+            <div class="space-y-4 mt-4 basis-3/5">
+              <h3 class="h3_style">
+                10+ years of experience in paintless dent repair
+              </h3>
+              <h4 class="text-cgrey text-center sm:text-left">
+                We are Smart PDR a group of enthusiatic car lovers that love to
+                work on cars to give them a brand new look. We have been in this
+                business for more than 10 years so we have tons of knowledge on
+                handling any kind of vehicles.
+              </h4>
+            </div>
+            <div class="basis-2/5 lg:pl-8 md:pl-6 sm:pl-4 my-4">
+              <ul
+                class="w-11/12 mx-auto my-4 space-y-4 font-semibold sm:text-xl"
+              >
+                <li>&#8594; 100% satisfaction</li>
+                <li>&#8594; Advanced Tools & Machinery</li>
+                <li>&#8594; Enthusiatic Team of Experts</li>
+                <li>&#8594; Fair Pricing</li>
+                <li>&#8594; Expert Care</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- contact us section  -->
+        <section
+          class="w-11/12 mx-auto bg-[url('../images/get-quote.png')] my-4 p-8 rounded-md"
+          id="contact"
+        >
+          <form action="" class="image rounded-md sm:p-8 p-4 space-y-4">
+            <h3 class="h3_style" style="text-align: left">Get A Quote</h3>
+            <div class="md:flex md:flex-row md:space-x-4 md:mb-4">
+              <div class="basis-1/2">
+                <label for="name" class="block font-semibold text-grey-800"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="inputfields h-12"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="basis-1/2">
+                <label for="email" class="block font-semibold text-grey-800"
+                  >Your Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="inputfields h-12"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <div class="md:flex md:flex-row md:space-x-4 md:my-4">
+              <div class="basis-1/2">
+                <label for="phone" class="block font-semibold text-grey-800"
+                  >Your Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="inputfields h-12"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="basis-1/2">
+                <label for="subject" class="block font-semibold text-grey-800"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  class="inputfields h-12"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="message" class="block font-semibold text-grey-800"
+                >Your Message</label
+              >
+              <textarea
+                id="message"
+                cols="30"
+                rows="10"
+                required
+                autocomplete="off"
+                class="inputfields"
+                style="resize: none"
+              ></textarea>
+            </div>
+            <button class="primary-btn rounded-lg px-4">Send Message</button>
+          </form>
+        </section>
+
+        <!-- locate us section  -->
+        <section id="locate-us" class="w-11/12 mx-auto my-4">
+          <h3 class="h3_style">We are here</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3297.3293417951977!2d-95.79393597617799!3d29.558576664746703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86411c22a62c6239%3A0x2ca727dc79f92aca!2zMzMxMyBBdmVudWUgSCwgUm9zZW5iZXJnLCBUWCA3NzQ3MSwg4KS44KSC4KSv4KWB4KSV4KWN4KSkIOCksOCkvuCknOCljeCkryDgpIXgpK7gpYfgpLDgpL_gpJXgpL4!5e0!3m2!1sne!2snp!4v1645281859452!5m2!1sne!2snp"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="w-full h-96"
+          ></iframe>
+        </section>
       </main>
     </div>
+    <footer class="bg-cgrey text-white pt-8 pb-2">
+      <div class="wrapper">
+        <section class="w-11/12 mx-auto flex items-start justify-between">
+          <section class="basis-1/4 -mt-2">
+            <img src="./images/logo.png" alt="Smart PDR" class="w-24" />
+            <h4 class="">
+              Smart PDR is a US based company, We are a team of expert car
+              lovers that love working with cars & giving your car a brand new
+              look.
+            </h4>
+          </section>
+          <section class="basis-1/4 flex justify-center items-center flex-col">
+            <p class="font-semibold">Site Links</p>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#locate-us">Locate Us</a></li>
+            </ul>
+          </section>
+          <section class="basis-1/4 flex justify-center items-center flex-col">
+            <p class="font-semibold">Social Links</p>
+            <ul>
+              <li><a href="#home">Facebook</a></li>
+              <li><a href="#about">Youtube</a></li>
+            </ul>
+          </section>
+          <section class="basis-1/4 flex justify-center items-center flex-col">
+            <p class="font-semibold">Reach out to us</p>
+            <ul>
+              <li>email</li>
+              <li>phone</li>
+              <li>address</a></li>
+            </ul>
+          </section>
+        </section>
+      </div>
+    </footer>
+    <footer class="bg-cgrey text-white text-center pt-4 pb-2">
+      <p id="cp-text"></p>
+    </footer>
   </body>
+  <script>
+    let year = new Date().getFullYear();
+    document.querySelector(
+      "#cp-text"
+    ).innerText = `Copyright © ${year} - Smart PDR`;
+  </script>
 </html>
