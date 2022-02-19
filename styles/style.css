@@ -1,3 +1,65 @@
+.hamburger {
+  height: 4px;
+  border-radius: 2px;
+  width: 25px;
+  background-color: black;
+  display: inline-block;
+  position: relative;
+  transition: background 0.2s ease-in-out;
+}
+
+.hamburger::before {
+  content: "";
+  height: 4px;
+  border-radius: 2px;
+  width: 25px;
+  background-color: black;
+  bottom: 8px;
+  position: absolute;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hamburger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  height: 4px;
+  border-radius: 2px;
+  width: 25px;
+  transition: transform 0.2s ease-in-out;
+  background-color: black;
+}
+
+.menu-items {
+  transition: top 0.2s ease-in-out;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+#cb:checked ~ label > .hamburger {
+  background: transparent;
+}
+
+#cb:checked ~ label > .hamburger::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#cb:checked ~ label > .hamburger::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+#cb:checked ~ .menu-items {
+  top: 100px;
+}
+
+.pos {
+  background-position: 10% 50%;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,5 +67,29 @@
 @layer base {
   html {
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
+
+  body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  h1::selection,
+  p::selection,
+  h2::selection {
+    background-color: rgba(255, 23, 39, 0.8);
+    color: white;
+  }
+}
+
+.primary-btn {
+  @apply py-2 text-white font-bold bg-cred hover:bg-transparent hover:ring-2 hover:ring-cred hover:text-black;
 }
