@@ -88,42 +88,20 @@
   );
 }
 
+.overlay {
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.822),
+    rgba(230, 230, 230, 0.945)
+  );
+}
+
 .fa-envelope,
 .fa-phone,
 .fa-location-dot {
   color: rgb(230, 230, 230);
   font-size: 20px;
 }
-
-/* @keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-} */
-/* 
-.slide-track {
-  display: flex;
-  position: relative;
-  justify-content: space-around;
-  align-items: center;
-  animation: scroll 10s linear infinite;
-}
-
-.slide-track:hover {
-  animation-play-state: paused;
-}
-
-.slides {
-  width: 100px;
-  display: block;
-}
-
-.slides > img {
-  width: 100%;
-} */
 
 @tailwind base;
 @tailwind components;

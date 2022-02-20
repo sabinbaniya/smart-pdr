@@ -218,15 +218,25 @@
         </section>
 
         <!-- our services section  -->
-        <section class="w-11/12 mx-auto my-16" id="services">
+        <section class="w-11/12 mx-auto my-16 relative" id="services">
           <h3 class="h3_style">Our Services</h3>
           <div
-            class="grid grid-cols-1 place-items-center gap-4 sm:grid-cols-2 md:grid-cols-5 md:grid-rows-3"
+            class="grid grid-cols-1 place-items-center gap-4 sm:grid-cols-2 md:grid-cols-5 md:grid-rows-3 relative"
           >
+            <div
+              class="absolute top-0 bottom-0 h-full w-full z-10 transition-all rounded-lg"
+              id="overlay"
+            >
+              <div
+                class="grid place-items-center h-full w-full rounded-lg overlay px-8"
+                id="popup"
+              ></div>
+            </div>
             <div
               class="h-48 md:h-full w-full overflow-hidden rounded-lg md:col-span-2 md:row-span-2"
             >
               <div
+                onClick="showPopup('Paintless Dent Repair')"
                 class="bg-[url('../images/pdr1.jfif')] hover:scale-105 bg-cover w-full h-full bg-no-repeat rounded-lg transition duration-300"
               >
                 <div
@@ -243,6 +253,7 @@
 
             <div
               class="h-48 md:h-full w-full overflow-hidden rounded-lg md:col-span-3 md:row-span-1"
+              onClick="showPopup('Standard Auto Body Repair')"
             >
               <div
                 class="bg-[url('../images/standard-auto-body-repair.jfif')] h-48 hover:scale-105 bg-cover w-full bg-no-repeat rounded-lg transition duration-300"
@@ -261,6 +272,7 @@
 
             <div
               class="h-48 md:h-full w-full overflow-hidden rounded-lg md:col-span-3 md:row-span-2"
+              onClick="showPopup('Detailing & Handwash')"
             >
               <div
                 class="bg-[url('../images/detailing.jpg')] h-48 md:h-full hover:scale-105 bg-cover w-full bg-no-repeat rounded-lg transition duration-300 bg-center"
@@ -279,6 +291,7 @@
 
             <div
               class="h-48 md:h-full w-full overflow-hidden rounded-lg md:col-span-2 md:row-span-1"
+              onClick="showPopup('Auto Glass Repair')"
             >
               <div
                 class="bg-[url('../images/auto-glass.png')] h-48 hover:scale-105 bg-cover w-full bg-no-repeat bg-center rounded-lg transition duration-300"
