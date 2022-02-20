@@ -95,6 +95,36 @@
   font-size: 20px;
 }
 
+/* @keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
+/* 
+.slide-track {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  animation: scroll 10s linear infinite;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slides {
+  width: 100px;
+  display: block;
+}
+
+.slides > img {
+  width: 100%;
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -142,4 +172,75 @@
 
 .inputfields {
   @apply border-2 border-gray-700 rounded-md py-1 px-2 bg-transparent focus:outline-0 w-full;
+}
+
+.logo-slider {
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+}
+
+.logo-slider:hover div {
+  animation-play-state: paused;
+}
+
+.logo-slider div {
+  display: flex;
+  position: relative;
+  align-items: center;
+  animation: marquee 15s linear infinite;
+  justify-content: space-around;
+}
+
+.logo-slider div img {
+  display: block;
+  min-width: 100px;
+  aspect-ratio: 1;
+  height: 60px;
+  margin: 0 2vw;
+  filter: grayscale(100);
+}
+
+.logo-slider div img:hover {
+  filter: grayscale(0);
+}
+
+#bmw,
+#bmw2,
+#mercedes,
+#mercedes2,
+#skoda,
+#skoda2,
+#subaru,
+#subaru2,
+#toyota,
+#toyota2,
+#vw,
+#vw2 {
+  height: 80px;
+  width: 50px;
+}
+
+#chevrolet,
+#chevrolet2 {
+  height: 120px;
+  width: 200px;
+}
+
+#hyundai,
+#hyundai2 {
+  height: 100px;
+  width: 200px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

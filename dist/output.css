@@ -95,9 +95,38 @@
   font-size: 20px;
 }
 
-/*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
-*/
+/* @keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
+
+/* 
+.slide-track {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  animation: scroll 10s linear infinite;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slides {
+  width: 100px;
+  display: block;
+}
+
+.slides > img {
+  width: 100%;
+} */
+
+/* ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -684,10 +713,6 @@ h1::selection,
   height: 7rem;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .h-48 {
   height: 12rem;
 }
@@ -722,10 +747,6 @@ h1::selection,
 
 .w-52 {
   width: 13rem;
-}
-
-.w-auto {
-  width: auto;
 }
 
 .w-full {
@@ -798,10 +819,6 @@ h1::selection,
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .gap-4 {
@@ -884,6 +901,14 @@ h1::selection,
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\.\/images\/detailing\.png\'\)\] {
+  background-image: url('../images/detailing.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/auto-glass\.jpg\'\)\] {
+  background-image: url('../images/auto-glass.jpg');
 }
 
 .from-gray-100 {
@@ -1108,6 +1133,90 @@ h1::selection,
   outline-width: 0px;
 }
 
+.logo-slider {
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+}
+
+.logo-slider:hover div {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.logo-slider div {
+  display: flex;
+  position: relative;
+  align-items: center;
+  -webkit-animation: marquee 15s linear infinite;
+          animation: marquee 15s linear infinite;
+  justify-content: space-around;
+}
+
+.logo-slider div img {
+  display: block;
+  min-width: 100px;
+  aspect-ratio: 1;
+  height: 60px;
+  margin: 0 2vw;
+  filter: grayscale(100);
+}
+
+.logo-slider div img:hover {
+  filter: grayscale(0);
+}
+
+#bmw,
+#bmw2,
+#mercedes,
+#mercedes2,
+#skoda,
+#skoda2,
+#subaru,
+#subaru2,
+#toyota,
+#toyota2,
+#vw,
+#vw2 {
+  height: 80px;
+  width: 50px;
+}
+
+#chevrolet,
+#chevrolet2 {
+  height: 120px;
+  width: 200px;
+}
+
+#hyundai,
+#hyundai2 {
+  height: 100px;
+  width: 200px;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1164,10 +1273,6 @@ h1::selection,
     height: 100%;
   }
 
-  .sm\:h-14 {
-    height: 3.5rem;
-  }
-
   .sm\:w-full {
     width: 100%;
   }
@@ -1212,12 +1317,6 @@ h1::selection,
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .sm\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .sm\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0px * var(--tw-space-x-reverse));
@@ -1246,6 +1345,11 @@ h1::selection,
 
   .sm\:text-left {
     text-align: left;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-xl {
@@ -1296,16 +1400,8 @@ h1::selection,
     display: none;
   }
 
-  .md\:h-28 {
-    height: 7rem;
-  }
-
   .md\:h-full {
     height: 100%;
-  }
-
-  .md\:basis-1\/3 {
-    flex-basis: 33.333333%;
   }
 
   .md\:grid-cols-5 {
@@ -1318,12 +1414,6 @@ h1::selection,
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1349,10 +1439,6 @@ h1::selection,
 }
 
 @media (min-width: 1024px) {
-  .lg\:h-16 {
-    height: 4rem;
-  }
-
   .lg\:w-12 {
     width: 3rem;
   }
