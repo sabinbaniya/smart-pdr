@@ -80,6 +80,14 @@
   );
 }
 
+.services {
+  background-image: linear-gradient(
+    0deg,
+    rgba(17, 17, 17, 0.349),
+    rgba(0, 0, 0, 0.349)
+  );
+}
+
 .fa-envelope,
 .fa-phone,
 .fa-location-dot {
