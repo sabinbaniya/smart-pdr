@@ -12,6 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="./js/index.js" defer></script>
   </head>
   <body>
@@ -32,7 +39,7 @@
 
         <!-- mobile menu -->
         <ul
-          class="md:hidden absolute menu-items -top-80 rounded-md space-y-4 bg-gradient-to-br from-gray-100 to-gray-300 py-4 text-black z-10"
+          class="md:hidden absolute menu-items -top-96 rounded-md space-y-6 bg-gradient-to-br from-gray-100 to-gray-300 py-12 text-black z-10"
         >
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -345,46 +352,95 @@
         </section>
       </main>
     </div>
-    <footer class="bg-cgrey text-white pt-8 pb-2">
+    <footer
+      class="bg-gradient-to-b from-stone-400 to-stone-500 text-white pt-8 pb-2 min-h-64 flex items-center justify-center"
+    >
       <div class="wrapper">
-        <section class="w-11/12 mx-auto flex items-start justify-between">
-          <section class="basis-1/4 -mt-2">
-            <img src="./images/logo.png" alt="Smart PDR" class="w-24" />
-            <h4 class="">
-              Smart PDR is a US based company, We are a team of expert car
-              lovers that love working with cars & giving your car a brand new
-              look.
-            </h4>
+        <section
+          class="w-11/12 mx-auto flex flex-col sm:flex-row items-start justify-between md:space-x-8 lg:space-x-28"
+        >
+          <section
+            class="flex items-center justify-between sm:justify-around lg:justify-between sm:items-start"
+          >
+            <section class="-mt-2 basis-1/2">
+              <img src="./images/logo.png" alt="Smart PDR" class="w-24" />
+              <h4 class="">
+                Smart PDR is a US based company, We are a team of expert car
+                lovers that love working with cars & giving your car a brand new
+                look.
+              </h4>
+            </section>
+            <section
+              class="basis-1/4 flex justify-center items-center flex-col"
+            >
+              <p class="font-semibold text-lg lg:text-xl">Site Links</p>
+              <ul>
+                <li><a class="hover:text-gray-200" href="#home">Home</a></li>
+                <li><a class="hover:text-gray-200" href="#about">About</a></li>
+                <li>
+                  <a class="hover:text-gray-200" href="#services">Services</a>
+                </li>
+                <li>
+                  <a class="hover:text-gray-200" href="#contact">Contact</a>
+                </li>
+                <li>
+                  <a class="hover:text-gray-200" href="#locate-us">Locate Us</a>
+                </li>
+              </ul>
+            </section>
           </section>
-          <section class="basis-1/4 flex justify-center items-center flex-col">
-            <p class="font-semibold">Site Links</p>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#locate-us">Locate Us</a></li>
-            </ul>
-          </section>
-          <section class="basis-1/4 flex justify-center items-center flex-col">
-            <p class="font-semibold">Social Links</p>
-            <ul>
-              <li><a href="#home">Facebook</a></li>
-              <li><a href="#about">Youtube</a></li>
-            </ul>
-          </section>
-          <section class="basis-1/4 flex justify-center items-center flex-col">
-            <p class="font-semibold">Reach out to us</p>
-            <ul>
-              <li>email</li>
-              <li>phone</li>
-              <li>address</a></li>
-            </ul>
+          <section
+            class="flex items-start justify-between sm:justify-around lg:justify-between w-full mt-4 sm:mt-0"
+          >
+            <section class="flex basis-1/2 justify-center items-start flex-col">
+              <p class="font-semibold text-lg lg:text-xl">Social Links</p>
+              <div
+                class="flex sm:flex-col md:flex-row space-x-4 sm:space-x-0 md:space-x-4 w-9/12 items-center"
+              >
+                <a href="https://facebook.com" target="_blank" rel="noopener"
+                  ><img
+                    src="./images/facebook.svg"
+                    alt="Facebook Handle"
+                    class="w-8 lg:w-12 grayscale hover:grayscale-0"
+                /></a>
+                <a
+                  href="https://www.youtube.com/channel/UC_mt8tAKLBYqydoR237YdFw"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    src="./images/youtube.svg"
+                    alt="Youtube Handle"
+                    class="w-8 lg:w-12 grayscale hover:grayscale-0"
+                /></a>
+              </div>
+            </section>
+            <section
+              class="flex justify-center items-start sm:items-center flex-col"
+            >
+              <p class="font-semibold text-lg lg:text-xl">Contact Info</p>
+              <ul class="space-y-2">
+                <li class="flex items-center">
+                  <i class="fa-solid mr-2 md:mr-4 fa-envelope"></i>
+                  smartpdr@gmail.com
+                </li>
+
+                <li class="flex items-center">
+                  <i class="fa-solid mr-2 md:mr-4 fa-phone"></i>
+                  +24 32423 324
+                </li>
+                <li class="flex items-center">
+                  <i class="fa-solid mr-2 md:mr-4 fa-location-dot"></i>
+                  3313 Avenue H, Rosenberg, TX 77471
+                </li>
+              </ul>
+            </section>
           </section>
         </section>
       </div>
     </footer>
-    <footer class="bg-cgrey text-white text-center pt-4 pb-2">
+    <footer
+      class="bg-gradient-to-b from-stone-500 to-stone-600 text-white text-center pt-4 pb-2"
+    >
       <p id="cp-text"></p>
     </footer>
   </body>

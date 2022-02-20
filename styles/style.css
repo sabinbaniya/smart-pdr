@@ -80,6 +80,13 @@
   );
 }
 
+.fa-envelope,
+.fa-phone,
+.fa-location-dot {
+  color: rgb(230, 230, 230);
+  font-size: 20px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -104,7 +111,14 @@
 
   h1::selection,
   p::selection,
-  h2::selection {
+  a::selection,
+  li::selection,
+  h2::selection,
+  h3::selection,
+  h4::selection,
+  label::selection,
+  button::selection,
+  img::selection {
     background-color: rgba(255, 23, 39, 0.8);
     color: white;
   }
