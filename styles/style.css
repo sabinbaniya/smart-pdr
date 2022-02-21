@@ -103,6 +103,12 @@
   font-size: 20px;
 }
 
+.mySlides {
+  max-height: 30rem;
+  height: auto;
+  width: auto;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -23,6 +23,7 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- navbar section -->
       <header
         class="flex justify-between items-center w-11/12 mx-auto relative z-50"
         id="home"
@@ -94,7 +95,7 @@
         </div>
       </header>
 
-      <main>
+      <main onClick="unenlargePicture()">
         <!-- hero section -->
         <section
           class="mt-8 mb-4 sm:flex justify-between items-center sm:h-[80vh]"
@@ -344,6 +345,72 @@
           </div>
         </section>
 
+        <!-- our work section  -->
+        <section class="w-11/12 mx-auto my-8 sm:my-16">
+          <h3 class="h3_style">Few glimpses of our work</h3>
+          <div class="flex items-center">
+            <button
+              class="hover:bg-slate-300 transition rounded-full h-12 w-12"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <div
+              class="w-11/12 mx-auto max-h-[30rem] grid place-items-center relative"
+              id="bigPicture"
+            >
+              <img
+                class="mySlides"
+                src="./images/before-after/Camry.jpg"
+                alt="Before and after picture of work done on camry by smart pdr"
+                onClick="return enlargePicture('./images/before-after/Camry.jpg')"
+              />
+              <img
+                class="mySlides"
+                src="./images/before-after/DodgeRam.jpg"
+                alt="Before and after picture of work done on Dodge Ram by smart pdr"
+                onClick="return enlargePicture('./images/before-after/DodgeRam.jpg')"
+              />
+              <img
+                class="mySlides"
+                src="./images/before-after/HondaCRV.jpg"
+                alt="Before and after picture of work done on HondaCRV by smart pdr"
+                onClick="return enlargePicture('./images/before-after/HondaCRV.jpg')"
+              />
+              <img
+                class="mySlides"
+                src="./images/before-after/LexusFender.jpg"
+                alt="Before and after picture of work done on Lexus Fender by smart pdr"
+                onClick="return enlargePicture('./images/before-after/LexusFender.jpg')"
+              />
+              <img
+                class="mySlides"
+                src="./images/before-after/LexusRoof.jpg"
+                alt="Before and after picture of work done on Lexus Roof by smart pdr"
+                onClick="return enlargePicture('./images/before-after/LexusRoof.jpg')"
+              />
+              <img
+                class="mySlides"
+                src="./images/before-after/Tundrafender.jpg"
+                alt="Before and after picture of work done on Tundra Fender by smart pdr"
+                onClick="return enlargePicture('./images/before-after/Tundrafender.jpg')"
+              />
+              <img
+                class="mySlides"
+                src="./images/before-after/TundraQuarterPanel.jpg"
+                alt="Before and after picture of work done on Tundra Quarter Panel by smart pdr"
+                onClick="return enlargePicture('./images/before-after/TundraQuarterPanel.jpg')"
+              />
+            </div>
+            <button
+              class="hover:bg-slate-300 transition rounded-full h-12 w-12"
+              onclick="plusDivs(+1)"
+            >
+              &#10095;
+            </button>
+          </div>
+        </section>
+
         <!-- contact us section  -->
         <section
           class="w-11/12 mx-auto bg-[url('../images/get-quote.png')] my-16 p-8 rounded-md"
@@ -437,6 +504,8 @@
         </section>
       </main>
     </div>
+
+    <!-- footer section -->
     <footer
       class="bg-gradient-to-b from-stone-400 to-stone-500 text-white pt-8 pb-2 min-h-64 flex items-center justify-center"
     >
@@ -541,6 +610,8 @@
       <p id="cp-text"></p>
     </footer>
   </body>
+
+  <!-- dont touch this one  -->
   <script>
     let year = new Date().getFullYear();
     document.querySelector(
