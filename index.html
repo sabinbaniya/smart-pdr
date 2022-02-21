@@ -22,6 +22,9 @@
     <script src="./js/index.js" defer></script>
   </head>
   <body>
+    <div
+      class="px-8 py-2 bg-red-600 text-white font-bold rounded-md hidden"
+    ></div>
     <div class="wrapper">
       <!-- navbar section -->
       <header
@@ -356,7 +359,7 @@
               &#10094;
             </button>
             <div
-              class="w-11/12 mx-auto max-h-[30rem] grid place-items-center relative"
+              class="w-11/12 mx-auto my-8 max-h-[30rem] grid place-items-center relative"
               id="bigPicture"
             >
               <img
@@ -416,7 +419,11 @@
           class="w-11/12 mx-auto bg-[url('../images/get-quote.png')] my-16 p-8 rounded-md"
           id="contact"
         >
-          <form action="" class="image rounded-md sm:p-8 p-4 space-y-4">
+          <form
+            action="https://formsubmit.co/info@smartpdr.us"
+            method="POST"
+            class="image rounded-md sm:p-8 p-4 space-y-4"
+          >
             <h3 class="h3_style" style="text-align: left">Get A Quote</h3>
             <div class="md:flex md:flex-row md:space-x-4 md:mb-4">
               <div class="basis-1/2">
@@ -429,6 +436,7 @@
                   class="inputfields h-12"
                   required
                   autocomplete="off"
+                  name="name"
                 />
               </div>
               <div class="basis-1/2">
@@ -441,6 +449,7 @@
                   class="inputfields h-12"
                   required
                   autocomplete="off"
+                  name="email"
                 />
               </div>
             </div>
@@ -456,6 +465,7 @@
                   class="inputfields h-12"
                   required
                   autocomplete="off"
+                  name="phone number"
                 />
               </div>
               <div class="basis-1/2">
@@ -468,6 +478,7 @@
                   class="inputfields h-12"
                   required
                   autocomplete="off"
+                  name="subject"
                 />
               </div>
             </div>
@@ -483,6 +494,7 @@
                 autocomplete="off"
                 class="inputfields"
                 style="resize: none"
+                name="message"
               ></textarea>
             </div>
             <button class="primary-btn rounded-lg px-4" type="submit">
