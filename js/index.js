@@ -1,3 +1,8 @@
+let year = new Date().getFullYear();
+document.querySelector(
+  "#cp-text"
+).innerText = `Copyright © ${year} - Smart Collision Repair and PDR`;
+
 function closeMenu() {
   document.querySelector("#cb").checked = false;
 }
@@ -47,7 +52,7 @@ function enlargePicture(src) {
   this.event.stopPropagation();
   const bigpic = document.querySelector("#bigPicture");
   const img = document.createElement("img");
-  img.setAttribute("class", "absolute w-screen h-screen");
+  img.setAttribute("class", "absolute w-screen h-screen max-w-[1200px]");
   img.setAttribute("id", "enlargedImage");
   img.setAttribute("src", src);
   bigpic.appendChild(img);

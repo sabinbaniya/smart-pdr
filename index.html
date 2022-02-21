@@ -2,28 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- this is the title for your page that appears on the tabs -->
     <title>Smart Collision Repair and PDR</title>
+    <!-- title ends -->
+    <!-- Favicon -->
+    <link href="./images/favicon.png" rel="icon" type="image/png" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <!-- for seo  -->
+    <!-- Meta Description -->
+    <meta
+      content="Smart Collision Repair and PDR offers the highest quality of Paintless Dent Repair.We have provided superior service to our customers and have assisted them in achieving their goals."
+      name="description"
+    />
+    <meta name="robots" contents="index , archive" />
+    <meta
+      name="keywords"
+      content="Smart Collision Repair and PDR, Paintless Dent Repair in US, Paintless Dent Repair, Car repair near texas, PDR services in texas"
+    />
+    <!-- Helps prevent duplicate content issues -->
+    <link href="http://smartpdr.us" rel="canonical" />
+    <!-- opengraph tags cards  -->
+    <meta content="website" property="og:type" />
+    <meta content="https://example.com/page.html" property="og:url" />
+    <meta content="Smart Collision Repair and PDR" property="og:title" />
+    <meta content="https://example.com/image.jpg" property="og:image" />
+    <meta
+      content="Smart Collision Repair and PDR offers the highest quality of Paintless Dent Repair.We have provided superior service to our customers and have assisted them in achieving their goals."
+      property="og:description"
+    />
+    <meta content="Smart Collision Repair and PDR" property="og:site_name" />
+    <meta content="en_US" property="og:locale" />
+    <meta content="1200" property="og:image:width" />
+    <meta content="630" property="og:image:height" />
+    <!-- opengraph tags ends  -->
+    <!-- ends for seo  -->
     <link href="/dist/output.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      rel="stylesheet"
     />
-    <script src="./js/index.js" defer></script>
+    <script defer src="./js/index.js"></script>
   </head>
-  <body>
+  <body onClick="unenlargePicture()">
     <div
-      class="px-8 py-2 bg-red-600 text-white font-bold rounded-md hidden"
+      class="px-8 py-2 bg-red-600 text-white font-bold rounded-md hidden max-w-[1200px]"
     ></div>
     <div class="wrapper">
       <!-- navbar section -->
@@ -33,37 +64,43 @@
       >
         <div>
           <img
+            alt="Smart Collision Repair and PDR"
             class="w-36"
             src="./images/logo.png"
-            alt="Smart Collision Repair and PDR"
           />
         </div>
-
-        <input type="checkbox" id="cb" class="hidden" />
-
-        <label for="cb" class="md:hidden">
-          <span class="hamburger"></span>
-        </label>
-
+        <input class="hidden" id="cb" type="checkbox" />
+        <label class="md:hidden" for="cb"
+          ><span class="hamburger"></span
+        ></label>
         <!-- mobile menu -->
         <ul
           class="md:hidden absolute menu-items -top-96 rounded-md space-y-6 bg-gradient-to-br from-gray-100 to-gray-300 py-12 text-black z-10"
         >
-          <li><a onclick="closeMenu()" href="#home">Home</a></li>
-          <li><a onclick="closeMenu()" href="#about">About</a></li>
-          <li><a onclick="closeMenu()" href="#services">Services</a></li>
-          <li><a onclick="closeMenu()" href="#contact">Contact</a></li>
-          <li><a onclick="closeMenu()" href="#locate-us">Locate Us</a></li>
+          <li>
+            <a href="#home" onclick="closeMenu()">Home</a>
+          </li>
+          <li>
+            <a href="#about" onclick="closeMenu()">About</a>
+          </li>
+          <li>
+            <a href="#services" onclick="closeMenu()">Services</a>
+          </li>
+          <li>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+          </li>
+          <li>
+            <a href="#locate-us" onclick="closeMenu()">Locate Us</a>
+          </li>
           <li>
             <a
-              onclick="closeMenu()"
-              href="#locate-us"
               class="md:hidden rounded-full px-4 primary-btn"
+              href="#locate-us"
+              onclick="closeMenu()"
               >Book now</a
             >
           </li>
         </ul>
-
         <!-- desktop menu -->
         <nav class="relative max-w-full hidden md:block desktop-menu">
           <ul class="flex items-center justify-between space-x-4 lg:space-x-8">
@@ -90,15 +127,11 @@
             </li>
           </ul>
         </nav>
-
         <div class="hidden md:block">
-          <a href="#contact">
-            <button class="px-6 rounded-md primary-btn">Book Now</button>
-          </a>
+          <a class="px-6 rounded-md primary-btn" href="#contact">Book Now</a>
         </div>
       </header>
-
-      <main onClick="unenlargePicture()">
+      <main>
         <!-- hero section -->
         <section
           class="mt-8 mb-4 sm:flex justify-between items-center sm:h-[80vh]"
@@ -112,7 +145,7 @@
               We make your car look & feel brand new.
             </h1>
             <h1
-              class="font-light text-cgrey text-center sm:text-left lg:text-lg"
+              class="font-light text-cgrey text-center sm:text-left lg:text-lg mb-4"
             >
               Smart Collision Repair and PDR offers the highest quality of
               Paintless Dent Repair i.e PDR on the market today. We have
@@ -121,24 +154,20 @@
               to excellence have earned us the reputation as the best PDR in the
               area.
             </h1>
-            <a href="#companies">
-              <button class="primary-btn px-4 rounded-md my-4 w-52">
-                Know More
-              </button>
-            </a>
+            <a class="primary-btn px-4 rounded-md w-52" href="#companies"
+              >Know More</a
+            >
           </div>
           <div
             class="sm:bg-[url('../images/hero.png')] sm:basis-3/5 sm:h-full sm:w-full pos sm:bg-no-repeat"
           >
             <img
-              src="./images/hero.png"
+              alt="Smart Collision Repair and PDR is a paintless dent repair experts company."
               class="ml-28 sm:hidden"
-              alt="Smart Collision Repair and PDR is a
-          paintless dent repair experts company."
+              src="./images/hero.png"
             />
           </div>
         </section>
-
         <!-- why coose us section  -->
         <section class="w-11/12 mx-auto my-16" id="companies">
           <h3 class="h3_style">Why choose us?</h3>
@@ -149,9 +178,9 @@
               class="card shadow-lg max-w-xs p-4 rounded-lg flex flex-col items-center space-y-2 text-center hover:bg-cred hover:text-white min-h-[227px]"
             >
               <img
-                src="./images/gem-solid.svg"
                 alt="Top Quality"
                 class="h-14"
+                src="./images/gem-solid.svg"
               />
               <h3 class="font-semibold text-xl">Top Quality</h3>
               <h4 class="text-cgrey">
@@ -163,9 +192,9 @@
               class="card shadow-lg max-w-xs p-4 rounded-lg flex flex-col items-center space-y-2 text-center hover:bg-cred hover:text-white min-h-[227px]"
             >
               <img
-                src="./images/toolbox-solid.svg"
                 alt="Service by Experts"
                 class="h-14"
+                src="./images/toolbox-solid.svg"
               />
               <h3 class="font-semibold text-xl">Service by Experts</h3>
               <h4 class="text-cgrey">
@@ -177,9 +206,9 @@
               class="card shadow-lg max-w-xs p-4 rounded-lg flex flex-col items-center space-y-2 text-center hover:bg-cred hover:text-white min-h-[227px]"
             >
               <img
-                src="./images/business-time-solid.svg"
                 alt="On-Time Delivery"
                 class="h-14"
+                src="./images/business-time-solid.svg"
               />
               <h3 class="font-semibold text-xl">On-Time Delivery</h3>
               <h4 class="text-cgrey">
@@ -189,38 +218,55 @@
             </div>
           </div>
         </section>
-
         <!-- companies section -->
         <section class="my-16 grid place-items-center w-11/12 mx-auto">
           <div class="logo-slider shadow-lg rounded-lg h-28">
             <div>
-              <img src="./images/bmw.png" id="bmw" />
-              <img src="./images/chevrolet.png" id="chevrolet" />
-              <img src="./images/ford.png" id="ford" />
-              <img src="./images/honda.png" id="honda" />
-              <img src="./images/hyundai.png" id="hyundai" />
-              <img src="./images/mercedes.png" id="mercedes" />
-              <img src="./images/skoda.png" id="skoda" />
-              <img src="./images/subaru.png" id="subaru" />
-              <img src="./images/toyota.png" id="toyota" />
-              <img src="./images/vw.png" id="vw" />
+              <img alt="bmw logo" id="bmw" src="./images/bmw.png" />
+              <img
+                alt="chevrolet logo"
+                id="chevrolet"
+                src="./images/chevrolet.png"
+              />
+              <img alt="ford logo" id="ford" src="./images/ford.png" />
+              <img alt="honda logo" id="honda" src="./images/honda.png" />
+              <img alt="hyundai logo" id="hyundai" src="./images/hyundai.png" />
+              <img
+                alt="mercedes logo"
+                id="mercedes"
+                src="./images/mercedes.png"
+              />
+              <img alt="skoda logo" id="skoda" src="./images/skoda.png" />
+              <img alt="subaru logo" id="subaru" src="./images/subaru.png" />
+              <img alt="toyota logo" id="toyota" src="./images/toyota.png" />
+              <img alt="volkswagen logo" id="vw" src="./images/vw.png" />
             </div>
-
             <div>
-              <img src="./images/bmw.png" id="bmw2" />
-              <img src="./images/chevrolet.png" id="chevrolet2" />
-              <img src="./images/ford.png" id="ford2" />
-              <img src="./images/honda.png" id="honda2" />
-              <img src="./images/hyundai.png" id="hyundai2" />
-              <img src="./images/mercedes.png" id="mercedes2" />
-              <img src="./images/skoda.png" id="skoda2" />
-              <img src="./images/subaru.png" id="subaru2" />
-              <img src="./images/toyota.png" id="toyota2" />
-              <img src="./images/vw.png" id="vw2" />
+              <img alt="bmw logo" id="bmw2" src="./images/bmw.png" />
+              <img
+                alt="chevrolet logo"
+                id="chevrolet2"
+                src="./images/chevrolet.png"
+              />
+              <img alt="ford logo" id="ford2" src="./images/ford.png" />
+              <img alt="honda logo" id="honda2" src="./images/honda.png" />
+              <img
+                alt="hyundai logo"
+                id="hyundai2"
+                src="./images/hyundai.png"
+              />
+              <img
+                alt="mercedes logo"
+                id="mercedes2"
+                src="./images/mercedes.png"
+              />
+              <img alt="skoda logo" id="skoda2" src="./images/skoda.png" />
+              <img alt="subaru logo" id="subaru2" src="./images/subaru.png" />
+              <img alt="toyota logo" id="toyota2" src="./images/toyota.png" />
+              <img alt="volkswagen logo" id="vw2" src="./images/vw.png" />
             </div>
           </div>
         </section>
-
         <!-- our services section  -->
         <section class="w-11/12 mx-auto my-16 relative" id="services">
           <h3 class="h3_style">Our Services</h3>
@@ -240,8 +286,8 @@
               class="h-48 md:h-full w-full overflow-hidden rounded-lg md:col-span-2 md:row-span-2"
             >
               <div
-                onClick="showPopup('Paintless Dent Repair')"
                 class="bg-[url('../images/pdr1.jfif')] hover:scale-105 bg-cover w-full h-full bg-no-repeat rounded-lg transition duration-300"
+                onclick="showPopup('Paintless Dent Repair')"
               >
                 <div
                   class="services h-full w-full flex items-center justify-center rounded-lg"
@@ -254,10 +300,9 @@
                 </div>
               </div>
             </div>
-
             <div
               class="h-48 md:h-full w-full overflow-hidden rounded-lg md:col-span-3 md:row-span-1"
-              onClick="showPopup('Standard Auto Body Repair')"
+              onclick="showPopup('Standard Auto Body Repair')"
             >
               <div
                 class="bg-[url('../images/standard-auto-body-repair.jfif')] h-48 hover:scale-105 bg-cover w-full bg-no-repeat rounded-lg transition duration-300"
@@ -273,10 +318,9 @@
                 </div>
               </div>
             </div>
-
             <div
               class="h-48 md:h-full w-full overflow-hidden rounded-lg md:col-span-3 md:row-span-2"
-              onClick="showPopup('Detailing & Handwash')"
+              onclick="showPopup('Detailing & Handwash')"
             >
               <div
                 class="bg-[url('../images/detailing.jpg')] h-48 md:h-full hover:scale-105 bg-cover w-full bg-no-repeat rounded-lg transition duration-300 bg-center"
@@ -292,10 +336,9 @@
                 </div>
               </div>
             </div>
-
             <div
               class="h-48 md:h-full w-full overflow-hidden rounded-lg md:col-span-2 md:row-span-1"
-              onClick="showPopup('Auto Glass Repair')"
+              onclick="showPopup('Auto Glass Repair')"
             >
               <div
                 class="bg-[url('../images/auto-glass.png')] h-48 hover:scale-105 bg-cover w-full bg-no-repeat bg-center rounded-lg transition duration-300"
@@ -313,13 +356,12 @@
             </div>
           </div>
         </section>
-
         <!-- about us section  -->
         <section class="w-11/12 mx-auto my-16" id="about">
           <div>
             <img
-              src="./images/hero-2.png"
               alt="Smart Collision Repair and PDR, Top Paintless Dent Repair Company"
+              src="./images/hero-2.png"
             />
           </div>
           <div class="sm:flex items-center justify-between w-full mt-8">
@@ -347,7 +389,6 @@
             </div>
           </div>
         </section>
-
         <!-- our work section  -->
         <section class="w-11/12 mx-auto my-8 sm:my-16">
           <h3 class="h3_style">Few glimpses of our work</h3>
@@ -363,46 +404,46 @@
               id="bigPicture"
             >
               <img
-                class="mySlides"
-                src="./images/before-after/Camry.jpg"
                 alt="Before and after picture of work done on camry by smart pdr"
-                onClick="return enlargePicture('./images/before-after/Camry.jpg')"
+                class="mySlides"
+                onclick="return enlargePicture('./images/before-after/Camry.jpg')"
+                src="./images/before-after/Camry.jpg"
               />
               <img
-                class="mySlides"
-                src="./images/before-after/DodgeRam.jpg"
                 alt="Before and after picture of work done on Dodge Ram by smart pdr"
-                onClick="return enlargePicture('./images/before-after/DodgeRam.jpg')"
+                class="mySlides"
+                onclick="return enlargePicture('./images/before-after/DodgeRam.jpg')"
+                src="./images/before-after/DodgeRam.jpg"
               />
               <img
-                class="mySlides"
-                src="./images/before-after/HondaCRV.jpg"
                 alt="Before and after picture of work done on HondaCRV by smart pdr"
-                onClick="return enlargePicture('./images/before-after/HondaCRV.jpg')"
+                class="mySlides"
+                onclick="return enlargePicture('./images/before-after/HondaCRV.jpg')"
+                src="./images/before-after/HondaCRV.jpg"
               />
               <img
-                class="mySlides"
-                src="./images/before-after/LexusFender.jpg"
                 alt="Before and after picture of work done on Lexus Fender by smart pdr"
-                onClick="return enlargePicture('./images/before-after/LexusFender.jpg')"
+                class="mySlides"
+                onclick="return enlargePicture('./images/before-after/LexusFender.jpg')"
+                src="./images/before-after/LexusFender.jpg"
               />
               <img
-                class="mySlides"
-                src="./images/before-after/LexusRoof.jpg"
                 alt="Before and after picture of work done on Lexus Roof by smart pdr"
-                onClick="return enlargePicture('./images/before-after/LexusRoof.jpg')"
+                class="mySlides"
+                onclick="return enlargePicture('./images/before-after/LexusRoof.jpg')"
+                src="./images/before-after/LexusRoof.jpg"
               />
               <img
-                class="mySlides"
-                src="./images/before-after/Tundrafender.jpg"
                 alt="Before and after picture of work done on Tundra Fender by smart pdr"
-                onClick="return enlargePicture('./images/before-after/Tundrafender.jpg')"
+                class="mySlides"
+                onclick="return enlargePicture('./images/before-after/Tundrafender.jpg')"
+                src="./images/before-after/Tundrafender.jpg"
               />
               <img
-                class="mySlides"
-                src="./images/before-after/TundraQuarterPanel.jpg"
                 alt="Before and after picture of work done on Tundra Quarter Panel by smart pdr"
-                onClick="return enlargePicture('./images/before-after/TundraQuarterPanel.jpg')"
+                class="mySlides"
+                onclick="return enlargePicture('./images/before-after/TundraQuarterPanel.jpg')"
+                src="./images/before-after/TundraQuarterPanel.jpg"
               />
             </div>
             <button
@@ -413,7 +454,6 @@
             </button>
           </div>
         </section>
-
         <!-- contact us section  -->
         <section
           class="w-11/12 mx-auto bg-[url('../images/get-quote.png')] my-16 p-8 rounded-md"
@@ -421,80 +461,78 @@
         >
           <form
             action="https://formsubmit.co/info@smartpdr.us"
-            method="POST"
             class="image rounded-md sm:p-8 p-4 space-y-4"
+            method="post"
           >
             <h3 class="h3_style" style="text-align: left">Get A Quote</h3>
             <div class="md:flex md:flex-row md:space-x-4 md:mb-4">
               <div class="basis-1/2">
-                <label for="name" class="block font-semibold text-grey-800"
+                <label class="block font-semibold text-grey-800" for="name"
                   >Your Name</label
                 >
                 <input
-                  type="text"
-                  id="name"
-                  class="inputfields h-12"
-                  required
                   autocomplete="off"
+                  class="inputfields h-12"
+                  id="name"
                   name="name"
+                  required=""
+                  type="text"
                 />
               </div>
               <div class="basis-1/2">
-                <label for="email" class="block font-semibold text-grey-800"
+                <label class="block font-semibold text-grey-800" for="email"
                   >Your Email</label
                 >
                 <input
-                  type="email"
-                  id="email"
-                  class="inputfields h-12"
-                  required
                   autocomplete="off"
+                  class="inputfields h-12"
+                  id="email"
                   name="email"
+                  required=""
+                  type="email"
                 />
               </div>
             </div>
-
             <div class="md:flex md:flex-row md:space-x-4 md:my-4">
               <div class="basis-1/2">
-                <label for="phone" class="block font-semibold text-grey-800"
+                <label class="block font-semibold text-grey-800" for="phone"
                   >Your Phone Number</label
                 >
                 <input
-                  type="tel"
-                  id="phone"
-                  class="inputfields h-12"
-                  required
                   autocomplete="off"
+                  class="inputfields h-12"
+                  id="phone"
                   name="phone number"
+                  required=""
+                  type="tel"
                 />
               </div>
               <div class="basis-1/2">
-                <label for="subject" class="block font-semibold text-grey-800"
+                <label class="block font-semibold text-grey-800" for="subject"
                   >Subject</label
                 >
                 <input
-                  type="text"
-                  id="subject"
-                  class="inputfields h-12"
-                  required
                   autocomplete="off"
+                  class="inputfields h-12"
+                  id="subject"
                   name="subject"
+                  required=""
+                  type="text"
                 />
               </div>
             </div>
             <div>
-              <label for="message" class="block font-semibold text-grey-800"
+              <label class="block font-semibold text-grey-800" for="message"
                 >Your Message</label
               >
               <textarea
-                id="message"
-                cols="30"
-                rows="10"
-                required
-                autocomplete="off"
                 class="inputfields"
-                style="resize: none"
+                cols="30"
+                id="message"
                 name="message"
+                required=""
+                rows="10"
+                style="resize: none"
               ></textarea>
             </div>
             <button class="primary-btn rounded-lg px-4" type="submit">
@@ -502,21 +540,18 @@
             </button>
           </form>
         </section>
-
         <!-- locate us section  -->
-        <section id="locate-us" class="w-11/12 mx-auto my-16">
+        <section class="w-11/12 mx-auto my-16" id="locate-us">
           <h3 class="h3_style">We are here</h3>
           <iframe
+            allowfullscreen
+            class="w-full h-96"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3297.3293417951977!2d-95.79393597617799!3d29.558576664746703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86411c22a62c6239%3A0x2ca727dc79f92aca!2zMzMxMyBBdmVudWUgSCwgUm9zZW5iZXJnLCBUWCA3NzQ3MSwg4KS44KSC4KSv4KWB4KSV4KWN4KSkIOCksOCkvuCknOCljeCkryDgpIXgpK7gpYfgpLDgpL_gpJXgpL4!5e0!3m2!1sne!2snp!4v1645281859452!5m2!1sne!2snp"
             style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            class="w-full h-96"
           ></iframe>
         </section>
       </main>
     </div>
-
     <!-- footer section -->
     <footer
       class="bg-gradient-to-b from-stone-400 to-stone-500 text-white pt-8 pb-2 min-h-64 flex items-center justify-center"
@@ -530,9 +565,9 @@
           >
             <section class="-mt-2 basis-1/2">
               <img
-                src="./images/logo.png"
                 alt="Smart Collision Repair and PDR"
                 class="w-24"
+                src="./images/logo.png"
               />
               <h4 class="">
                 Smart Collision Repair and PDR is a US based company, We are a
@@ -543,10 +578,14 @@
             <section
               class="basis-1/4 flex justify-center items-center flex-col"
             >
-              <p class="font-semibold text-lg lg:text-xl">Site Links</p>
+              <h2 class="font-semibold text-lg lg:text-xl">Site Links</h2>
               <ul>
-                <li><a class="hover:text-gray-200" href="#home">Home</a></li>
-                <li><a class="hover:text-gray-200" href="#about">About</a></li>
+                <li>
+                  <a class="hover:text-gray-200" href="#home">Home</a>
+                </li>
+                <li>
+                  <a class="hover:text-gray-200" href="#about">About</a>
+                </li>
                 <li>
                   <a class="hover:text-gray-200" href="#services">Services</a>
                 </li>
@@ -563,40 +602,39 @@
             class="flex items-start justify-between sm:justify-around lg:justify-between w-full mt-4 sm:mt-0"
           >
             <section class="flex basis-1/2 justify-center items-start flex-col">
-              <p class="font-semibold text-lg lg:text-xl">Social Links</p>
+              <h2 class="font-semibold text-lg lg:text-xl">Social Links</h2>
               <div
                 class="flex sm:flex-col md:flex-row space-x-4 sm:space-x-0 md:space-x-4 w-9/12 items-center"
               >
                 <a
                   href="https://www.facebook.com/smartpdr.us/"
-                  target="_blank"
                   rel="noopener"
+                  target="_blank"
                   ><img
-                    src="./images/facebook.svg"
                     alt="Facebook Handle"
                     class="w-8 lg:w-12 grayscale hover:grayscale-0"
+                    src="./images/facebook.svg"
                 /></a>
                 <a
                   href="https://www.youtube.com/channel/UC_mt8tAKLBYqydoR237YdFw"
-                  target="_blank"
                   rel="noopener"
+                  target="_blank"
                   ><img
-                    src="./images/youtube.svg"
                     alt="Youtube Handle"
                     class="w-8 lg:w-12 grayscale hover:grayscale-0"
+                    src="./images/youtube.svg"
                 /></a>
               </div>
             </section>
             <section
               class="flex justify-center items-start sm:items-center flex-col"
             >
-              <p class="font-semibold text-lg lg:text-xl">Contact Info</p>
+              <h2 class="font-semibold text-lg lg:text-xl">Contact Info</h2>
               <ul class="space-y-2">
                 <li class="flex items-center">
                   <i class="fa-solid mr-2 md:mr-4 fa-envelope"></i>
-                  <a href="mailto: info@smartpdr.us">info@smartpdr.us</a>
+                  <a href="mailto:info@smartpdr.us">info@smartpdr.us</a>
                 </li>
-
                 <li class="flex items-center">
                   <i class="fa-solid mr-2 md:mr-4 fa-phone"></i>
                   <a href="tel:+3467026612">+3467026612</a>
@@ -605,8 +643,8 @@
                   <i class="fa-solid mr-2 md:mr-4 fa-location-dot"></i>
                   <a
                     href="https://www.google.com/maps/place/3313+Avenue+H,+Rosenberg,+TX+77471,+USA/@29.5593827,-95.7952042,17z/"
-                    target="_blank"
                     rel="noopener"
+                    target="_blank"
                     >3313 Avenue H, Rosenberg, TX 77471</a
                   >
                 </li>
@@ -622,12 +660,4 @@
       <p id="cp-text"></p>
     </footer>
   </body>
-
-  <!-- dont touch this one  -->
-  <script>
-    let year = new Date().getFullYear();
-    document.querySelector(
-      "#cp-text"
-    ).innerText = `Copyright © ${year} - Smart Collision Repair and PDR`;
-  </script>
 </html>
